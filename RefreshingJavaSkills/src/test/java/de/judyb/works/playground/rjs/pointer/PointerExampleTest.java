@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 public class PointerExampleTest {
 
@@ -58,5 +59,10 @@ public class PointerExampleTest {
 
         assertEquals(3, po1.getValue());
         assertEquals(3, po2.getValue());
+    }
+
+    @Test
+    public void shouldJustFailToTestGitHubAction() {
+        fail("this test is always failing");
     }
 }
